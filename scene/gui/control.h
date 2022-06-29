@@ -191,6 +191,7 @@ private:
 
 		MouseFilter mouse_filter = MOUSE_FILTER_STOP;
 		bool force_pass_scroll_events = true;
+		bool mouse_unfocused_window_update = false;
 
 		bool clip_contents = false;
 
@@ -471,6 +472,9 @@ public:
 
 	void set_force_pass_scroll_events(bool p_force_pass_scroll_events);
 	bool is_force_pass_scroll_events() const;
+
+	void set_mouse_unfocused_window_update(bool p_mouse_unfocused_window_update);
+	bool is_mouse_unfocused_window_update() const;
 
 	/* SKINNING */
 
